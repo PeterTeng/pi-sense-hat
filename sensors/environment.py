@@ -14,7 +14,7 @@ while True:
     humidity    = round(humidity, 1)
 
     temperature_text = "%s C" % (temperature)
-    humidity_text = "%s %" % (humidity)
+    humidity_text = "%s %%" % (humidity)
     pressure_text = "%s hpa" % (pressure)
 
     show_slow_text(temperature_text)
