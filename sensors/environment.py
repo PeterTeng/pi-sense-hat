@@ -13,11 +13,6 @@ while True:
     pressure    = round(pressure, 1)
     humidity    = round(humidity, 1)
 
-    temperature_text = "%s 'C"　% (temperature)
-    sense.show_slow_text(temperature_text)
+    msg = "Temperature = %s, Pressure=%s, Humidity=%s" % (temperature, pressure, humidity)
 
-    pressure_text = "%s hPa"　% (pressure)
-    sense.show_slow_text(pressure_text)
-
-    humidity_text = "%s %"　% (humidity)
-    sense.show_slow_text(humidity_text)
+    sense.show_slow_text(msg)
