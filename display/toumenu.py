@@ -4,7 +4,7 @@ sense = SenseHat()
 
 blank     = [  0,   0,   0]
 tm_yellow = [255, 220, 140]
-tm_orange = [254, 150, 100]
+tm_orange = [255, 144,  95]
 tm_red    = [255,  70,  18]
 tm_purple = [209,  99, 206]
 
