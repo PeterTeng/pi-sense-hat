@@ -2,30 +2,29 @@ from sense_hat import SenseHat
 
 sense = SenseHat()
 
-# 1st Column
-sense.set_pixel(0, 2, [0, 0, 255])
-sense.set_pixel(0, 3, [0, 0, 255])
-sense.set_pixel(0, 4, [0, 0, 255])
-sense.set_pixel(0, 5, [0, 0, 255])
+blank     = [  0,   0,   0]
+tm_yellow = [255, 207, 132]
+tm_orange = [255, 161, 104]
+tm_red    = [255,  70,  18]
+tm_purple = [209,  99, 206]
 
-# 2nd Column
-sense.set_pixel(1, 3, [0, 0, 255])
-sense.set_pixel(1, 4, [0, 0, 255])
+b = blank
 
-# 3rd Column
-sense.set_pixel(0, 1, [0, 0, 255])
-sense.set_pixel(0, 2, [0, 0, 255])
-sense.set_pixel(0, 3, [0, 0, 255])
-sense.set_pixel(0, 4, [0, 0, 255])
-sense.set_pixel(0, 5, [0, 0, 255])
-sense.set_pixel(0, 6, [0, 0, 255])
+y = tm_yellow
+o = tm_orange
+r = tm_red
+p = tm_purple
 
-# 4th Column
-sense.set_pixel(0, 2, [0, 0, 255])
-sense.set_pixel(0, 3, [0, 0, 255])
-sense.set_pixel(0, 4, [0, 0, 255])
-sense.set_pixel(0, 5, [0, 0, 255])
 
-# TODO(peterteng) - Revert Algorithm
+image = [
+    b,b,b,b,b,b,b,b,
+    b,b,o,b,b,r,b,b,
+    y,b,o,o,r,r,b,p,
+    y,y,o,o,r,r,p,p,
+    y,y,o,o,r,r,p,p,
+    y,b,o,o,r,r,b,p,
+    b,b,o,b,b,r,b,b,
+    b,b,b,b,b,b,b,b
+]
 
-sense.clear()
+sense.set_pixels(image)
