@@ -15,4 +15,4 @@ while True:
 
     msg = "Temperature = %s, Pressure=%s, Humidity=%s" % (temperature, pressure, humidity)
 
-    sense.show_slow_text(msg)
+    show_slow_text(msg)
