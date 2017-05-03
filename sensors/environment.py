@@ -1,8 +1,10 @@
 from sense_hat import SenseHat
 sense = SenseHat()
+sense.low_light = True
+sense.rotate = 180
 
 def show_slow_text(text):
-    sense.show_message(text, scroll_speed=0.05, text_colour=[120, 120, 120])
+    sense.show_message(text, scroll_speed=0.15, text_colour=[120, 120, 120])
 
 while True:
     temperature = sense.get_temperature()
